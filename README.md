@@ -25,8 +25,34 @@ Quem quiser saber mais:
  6. Instalar o Express
  'npm install express'
 
- 7. Criar o arquivo .gitignore 
+ 7. Criar o arquivo .gitignore dizendo para o git ignorar a pasta node_modules.
  'node modules'
 
  8. Instalar o config
+ Podemos criar variáveis de ambiente em um arquivo separado chamado config.json. O pacote config nos permite organizar a configuração da nossa aplicação e usar no nosso projeto.
+
  'npm install config"
+
+ Para usar, crie uma pasta chamada config e dentro desta pasta iremos criar um arquivo chamado
+
+default.json
+
+neste arquivo adicionamos um objeto de configuração:
+
+{
+    "server": {
+        "port": 4000,
+        "path_root": "/api/v1/"
+    }
+}
+
+9. Vamos codificar a inicialização do servidor usando o express:
+
+const express = require("express"); 
+
+const app = express();
+let port = config.get("server.port");
+
+app.listen(port,function() {
+    console.log("Servidor iniciado e escutando na porta "+port);
+});
