@@ -1,0 +1,23 @@
+{
+  "name": "aula6-sd-teorica",
+  "version": "1.0.0",
+  "description": "Aula 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edneirferreira/Aula6-SD-Teorica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edneirferreira/Aula6-SD-Teorica/issues"
+  },
+  "homepage": "https://github.com/Edneirferreira/Aula6-SD-Teorica#readme",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.3"
+  }
+}
